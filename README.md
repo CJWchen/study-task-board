@@ -9,3 +9,4 @@ A tiny practice project for learning Git and GitHub.
 - Show task count
 - Practice version control workflow
 - Built with plain HTML, CSS, and JavaScript
+- 我总是爱吃大便
