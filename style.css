@@ -28,7 +28,7 @@ input {
   flex: 1;
   padding: 12px;
   border: 1px solid #d1d5db;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 button {
@@ -36,10 +36,22 @@ button {
   border: none;
   border-radius: 10px;
   background: #2563eb;
-  color: #ffffff;
+  color: #a61919;
   cursor: pointer;
 }
 
 ul {
   padding-left: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+li button {
+  background: #ef4444;
 }

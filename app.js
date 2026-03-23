@@ -8,9 +8,21 @@ const tasks = [];
 function renderTasks() {
   taskList.innerHTML = "";
 
-  tasks.forEach((task) => {
+  tasks.forEach((task, index) => {
     const item = document.createElement("li");
-    item.textContent = task;
+    const label = document.createElement("span");
+    const removeButton = document.createElement("button");
+
+    label.textContent = task;
+    removeButton.textContent = "Delete";
+
+    removeButton.addEventListener("click", () => {
+      tasks.splice(index, 1);
+      renderTasks();
+    });
+
+    item.appendChild(label);
+    item.appendChild(removeButton);
     taskList.appendChild(item);
   });
 
@@ -21,9 +33,9 @@ addButton.addEventListener("click", () => {
   const value = taskInput.value.trim();
 
   if (!value) {
-  alert("Please enter a task.");
-  return;
-}
+    alert("Please enter a task.");
+    return;
+  }
 
   tasks.push(value);
   taskInput.value = "";
