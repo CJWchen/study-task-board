@@ -43,3 +43,15 @@ button {
 ul {
   padding-left: 20px;
 }
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+li button {
+  background: #ef4444;
+}
