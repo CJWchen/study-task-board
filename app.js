@@ -35,3 +35,5 @@ taskInput.addEventListener("keydown", (event) => {
     addButton.click();
   }
 });
+
+taskInput.focus();
