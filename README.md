@@ -7,3 +7,4 @@ A tiny practice project for learning Git and GitHub.
 - Add a study task
 - Show task count
 - Practice version control workflow
+- Built with plain HTML, CSS, and JavaScript
