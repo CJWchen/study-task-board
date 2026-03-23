@@ -29,3 +29,9 @@ addButton.addEventListener("click", () => {
   taskInput.value = "";
   renderTasks();
 });
+
+taskInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    addButton.click();
+  }
+});
