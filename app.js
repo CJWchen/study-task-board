@@ -21,8 +21,9 @@ addButton.addEventListener("click", () => {
   const value = taskInput.value.trim();
 
   if (!value) {
-    return;
-  }
+  alert("Please enter a task.");
+  return;
+}
 
   tasks.push(value);
   taskInput.value = "";
